@@ -3,8 +3,16 @@
 <head>
   <title>My CV</title>
   <link rel="stylesheet" href="CVstyle.css">
+  <link rel="darkModestylesheet" href="darkmode.css">
 </head>
 <body>
+  <header>
+    <div class="thememode">
+      <h3 id="DarkModetext">Dark Mode is OFF</h3>
+      <button class="buttond" onclick="darkMode()">Darkmode</button>
+      <button class="buttond" onclick="lightMode()">LightMode</button>
+    </div>
+  </header>
 <div class="container">
     <h1>Curriculum Vitae</h1>
   
@@ -84,6 +92,14 @@
     <hr>
     <h2 class="section-title">References</h2>
     <p class="section-content">Available upon request.</p>
+    
+    
 </div>
+<div class="star-field">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+<script src="./darkmode.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
