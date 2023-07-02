@@ -6,12 +6,8 @@
   <link rel="darkModestylesheet" href="darkmode.css">
 </head>
 <body>
-  <header>
-    <div class="thememode">
-      <h3 id="DarkModetext">Dark Mode is OFF</h3>
-      <button class="buttond" onclick="darkMode()">Darkmode</button>
-      <button class="buttond" onclick="lightMode()">LightMode</button>
-    </div>
+<header>
+    <button class="dark-mode2"><i class="fa-regular fa-sun"></i></button>
   </header>
 <div class="container">
     <h1>Curriculum Vitae</h1>
@@ -76,7 +72,7 @@
   <div class="layer"></div>
   <div class="layer"></div>
   <div class="layer"></div>
-<script src="./darkmode.js"></script>
-<script src="app.js"></script>
+  <script src="./darkmode.js"></script>
+<script src="https://kit.fontawesome.com/5e3d336e73.js" crossorigin="anonymous"></script>
 </body>
 </html>

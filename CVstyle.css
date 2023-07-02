@@ -120,7 +120,7 @@ body {
   }
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
-.light-mode, body {
+ .light-mode, body {
     background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
     background-size:cover;
         -webkit-animation: slidein 100s;
@@ -134,7 +134,7 @@ body {
   
         -webkit-animation-direction: alternate;
         animation-direction: alternate;              
-  }
+  } 
   
 @-webkit-keyframes slidein {
   from {background-position: top; background-size:3000px; }
@@ -151,13 +151,13 @@ body {
 .dark-mode{
   background-image: url("wp3254715.jpg") ;
   background-size: cover;
-}
+} 
   
-  #DarkModetext{
+   #DarkModetext{
     font-size: 0.7rem;
-  }
+  } 
   
-  .thememode{
+   .thememode{
     display: flex;
     flex-direction:row;
     border-radius: 10px;
@@ -166,7 +166,12 @@ body {
 
   }
 
-  .dark-mode-b{
+  .dark-mode2{
     padding: 10px 10px;
     border-radius: 100px;
-  }
+ }
+  header{
+     align-self: flex-start;
+     margin: 20px ;
+     
+ }
