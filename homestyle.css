@@ -1,0 +1,16 @@
+/* .li{
+    border-radius: 10px;
+    background-color: rgba(218, 106, 32, 0.774);
+} */
+
+.nav {
+    border-radius: 10px;
+    background-color: rgba(32, 190, 218, 0.774);
+    box-sizing: 10%;
+    box-shadow: rgb(80, 255, 246);
+}
+
+.nv{
+    display: flex;
+    flex-direction: row;
+}

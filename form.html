@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>My CV</title>
   <link rel="stylesheet" href="CVstyle.css">
 </head>
+
 <body>
   <header>
     <div class="thememode">
@@ -12,73 +14,78 @@
       <button class="buttond" onclick="lightMode()">LightMode</button>
     </div>
   </header>
-<div class="container">
-    <h1>Curriculum Vitae</h1>
-  
-    <h2 class="section-title">Contact Information</h2>
-    <div class="section-content">
+
+  <form action="CV.php" method="post">
+    <div class="container">
+
+      <h1>Curriculum Vitae</h1>
+
+      <h2 class="section-title">Contact Information</h2>
+      <div class="section-content">
         <p><label for="fn">full name:</label> <input class="inputs" name="fn" type="text"></p>
-        <p>city: <input class="inputs" type="location"></p>
-        <p>phon number: <input class="inputs" type="tel"></p>
-        <p>email addres: <input class="inputs" type="email"></p>
-        <p>github: <input class="inputs" type="link"></p>
+        <p>city: <input class="inputs" type="location" name="city"></p>
+        <p>phon number: <input class="inputs" type="tel" name="tel"></p>
+        <p>email addres: <input class="inputs" type="email" name="email"></p>
+        <p>github: <input class="inputs" type="link" name="link"></p>
+      </div>
+
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="section-content">
+        <textarea placeholder="write ubute yourself" class="inputs"  cols="30" rows="10" name="summary"></textarea>
+      </p>
+
+      <h2 class="section-title">Work Experience</h2>
+      <ul class="section-content">
+        <li>
+          <strong><input class="inputs" type="text" placeholder=" company name" name="cn"></strong>
+          <br> <br>
+          <em><input class="inputs" type="text" placeholder=" job title" name="jt"></em>
+          <br> <br>
+          <em><input class="inputs" type="date" name="date"></em>
+          <br> <br>
+          <input class="inputs" type="text" placeholder="Description of responsibilities and achievements." name="description">
+        </li>
+
+      </ul>
+
+      <h2 class="section-title">Education</h2>
+      <ul class="section-content">
+        <li>
+          <strong><input class="inputs" type="text" placeholder=" uni name" name="uni"></strong>
+          <br> <br>
+          <em><input class="inputs" type="text" placeholder=" Grade" name="g"></em>
+          <br> <br>
+          <em><input class="inputs" type="text" placeholder=" graduation state" name="gs"></em>
+          <br> <br>
+          <input class="inputs" type="text" placeholder=" honors and awards" name="honors">
+        </li>
+
+      </ul>
+
+      <h2 class="section-title">Skills</h2>
+      <textarea name="skills" id="" cols="30" rows="5" class="inputs" placeholder="type your skills here"></textarea>
+
+      <h2 class="section-title">Certifications and Training</h2>
+      <ul class="certifications-list">
+        <li>
+          <input type="text" class="inputs" placeholder=" corses or certifications" name="ct">
+        </li>
+        <!-- <li><input type="text" class="inputs"></li> -->
+
+      </ul>
+
+      <h2 class="section-title">Projects or Achievements</h2>
+
+      <textarea name="pa" id="" cols="30" rows="5" class="inputs"></textarea>
+
+
+      <h2 class="section-title">References</h2>
+      <p class="section-content"><input type="text" class="inputs" placeholder="Github or linkdin accunt" name="ref"></p>
+      <input type="submit" class="submit" value="submit my CV">
+
     </div>
-    
-    <h2 class="section-title">Professional Summary</h2>
-    <p class="section-content">
-        <textarea placeholder="write ubute yourself" class="inputs" name="" id="" cols="30" rows="10"></textarea>
-    </p>
-    
-    <h2 class="section-title">Work Experience</h2>
-    <ul class="section-content">
-      <li>
-        <strong><input class="inputs" type="text" placeholder=" company name"></strong>
-        <br> <br>
-        <em><input class="inputs" type="text" placeholder=" job title"></em>
-        <br> <br>
-        <em><input class="inputs" type="date"></em>
-        <br> <br>
-        <input class="inputs" type="text" placeholder="Description of responsibilities and achievements.">
-      </li>
-      
-    </ul>
-    
-    <h2 class="section-title">Education</h2>
-    <ul class="section-content">
-      <li>
-        <strong><input class="inputs" type="text" placeholder=" uni name"></strong>
-        <br> <br>
-        <em><input class="inputs" type="text" placeholder=" Grade"></em>
-        <br> <br>
-        <em><input class="inputs" type="text" placeholder=" graduation state"></em>
-        <br> <br>
-        <input class="inputs" type="text" placeholder=" honors and awards">
-      </li>
-      
-    </ul>
-    
-    <h2 class="section-title">Skills</h2>
-    <textarea name="" id="" cols="30" rows="5" class="inputs"
-    placeholder="type your skills here"></textarea>
-    
-    <h2 class="section-title">Certifications and Training</h2>
-    <ul class="certifications-list">
-      <li>
-        <input type="text" class="inputs" placeholder=" corses or certifications">
-      </li>
-      <!-- <li><input type="text" class="inputs"></li> -->
-      
-    </ul>
-    
-    <h2 class="section-title">Projects or Achievements</h2>
-      
-        <textarea name="" id="" cols="30" rows="5" class="inputs"></textarea>
-      
-    
-    <h2 class="section-title">References</h2>
-    <p class="section-content"><input type="text" class="inputs" placeholder="Github or linkdin accunt"></p>
-    <input type="submit" class="submit" value="submit my CV">
-</div>
-<script src="darkmode.js"></script>
+  </form>
+  <script src="darkmode.js"></script>
 </body>
+
 </html>
