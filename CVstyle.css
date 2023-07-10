@@ -1,5 +1,6 @@
 /* styles.css */
 
+
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -203,4 +204,10 @@ footer {
 
 .icone:hover{
   background-color: rgba(255, 0, 221, 0.705);
+}
+header i{
+  
+}
+.fa-moon{
+  color: #f2f2f2;
 }
